@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Style That Serves | Runway to Benefit the Arts</title>
+  <meta name="description" content="Style That Serves — Runway to Benefit the Arts. Saturday, May 29 at the Memorial Art Gallery, Rochester, NY. Hosted by Meg Mundy Style LLC." />
+  <meta property="og:title" content="Style That Serves | Runway to Benefit the Arts" />
+  <meta property="og:description" content="Saturday, May 29 · Memorial Art Gallery, Rochester, NY. Hosted by Meg Mundy Style LLC." />
+  <meta property="og:type" content="website" />
+  <style>
+    :root {
+      --ink: #121212;
+      --muted: #666666;
+      --soft: #f7f4ef;
+      --line: #ddd5ca;
+      --blue: #19b7c9;
+      --white: #ffffff;
+      --shadow: rgba(0,0,0,0.06);
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, Helvetica, sans-serif;
+      color: var(--ink);
+      background: radial-gradient(circle at 10% 0%, rgba(25,183,201,0.12), transparent 26rem), linear-gradient(180deg, #fff 0%, var(--soft) 100%);
+      line-height: 1.5;
+    }
+    .page { width: min(100%, 1140px); margin: 0 auto; padding: 24px 18px 32px; }
+    header { text-align: center; padding: 32px 16px 20px; }
+    .brand-kicker { letter-spacing: 0.22em; text-transform: uppercase; font-size: 0.75rem; font-weight: 800; color: var(--muted); margin: 0 0 14px; }
+    h1 { font-family: Georgia, 'Times New Roman', serif; font-weight: 400; letter-spacing: -0.045em; font-size: clamp(2.2rem, 8vw, 5rem); line-height: 0.86; margin: 0; }
+    .subtitle { font-family: Georgia, 'Times New Roman', serif; font-style: italic; font-size: clamp(1rem, 3vw, 1.4rem); margin: 16px auto 0; max-width: 740px; }
+    .intro { margin: 18px auto 0; max-width: 760px; color: var(--muted); font-size: 0.95rem; }
+    .hero-line { width: 160px; display: flex; align-items: center; gap: 14px; margin: 20px auto 0; }
+    .hero-line::before, .hero-line::after { content: ""; height: 1px; background: var(--ink); flex: 1; }
+    .diamond { width: 7px; height: 7px; background: var(--ink); transform: rotate(45deg); }
+    .quick-actions { display: flex; justify-content: center; gap: 8px; flex-wrap: wrap; margin: 22px 0 0; }
+    .pill { border: 1px solid var(--line); background: rgba(255,255,255,0.8); color: var(--ink); border-radius: 999px; padding: 9px 12px; text-decoration: none; font-size: 0.85rem; box-shadow: 0 6px 20px rgba(0,0,0,0.04); transition: all 0.2s ease; }
+    .pill:hover { background: rgba(255,255,255,0.95); }
+    .feature { background: rgba(255,255,255,0.86); border: 1px solid var(--line); border-radius: 24px; padding: 20px; box-shadow: 0 16px 40px var(--shadow); margin: 20px 0 24px; display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 18px; align-items: center; }
+    .feature h2 { font-family: Georgia, 'Times New Roman', serif; font-weight: 400; margin: 0; font-size: clamp(1.6rem, 4vw, 2.2rem); }
+    .feature p { margin: 10px 0 0; color: var(--muted); font-size: 0.92rem; }
+    .event-facts { display: grid; gap: 9px; }
+    .fact { border: 1px solid var(--line); border-radius: 16px; padding: 11px 12px; background: rgba(255,255,255,0.72); font-size: 0.88rem; }
+    .fact strong { display: block; font-size: 0.65rem; letter-spacing: 0.13em; color: var(--blue); text-transform: uppercase; margin-bottom: 2px; font-weight: 700; }
+    .directory { margin-top: 22px; background: rgba(255,255,255,0.74); border: 1px solid var(--line); border-radius: 24px; padding: 20px; box-shadow: 0 16px 40px var(--shadow); }
+    .directory h2 { font-family: Georgia, 'Times New Roman', serif; font-weight: 400; margin: 0; font-size: clamp(1.6rem, 4vw, 2.2rem); }
+    .directory-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 9px; margin-top: 14px; }
+    .directory-card { text-decoration: none; color: var(--ink); border: 1px solid var(--line); background: var(--white); border-radius: 18px; padding: 12px; min-height: 120px; display: flex; flex-direction: column; gap: 6px; transition: transform 0.2s ease, box-shadow 0.2s ease; }
+    .directory-card:hover { transform: translateY(-2px); box-shadow: 0 10px 26px rgba(0,0,0,0.08); }
+    .directory-card span { color: var(--blue); font-weight: 900; font-size: 0.7rem; letter-spacing: 0.11em; }
+    .directory-card strong { font-family: Georgia, 'Times New Roman', serif; font-size: 1rem; line-height: 1; font-weight: 400; }
+    .directory-card em { color: var(--muted); font-style: normal; font-size: 0.78rem; line-height: 1.25; }
+    .search-wrap { padding: 12px 0 14px; }
+    .search { width: 100%; border: 1px solid var(--line); border-radius: 999px; padding: 14px 16px; font-size: 0.95rem; outline: none; box-shadow: 0 10px 24px rgba(0,0,0,0.05); background: rgba(255,255,255,0.94); font-family: inherit; }
+    .search:focus { border-color: var(--blue); box-shadow: 0 10px 32px rgba(25,183,201,0.12); }
+    section { margin-top: 28px; }
+    .section-title { display: flex; justify-content: space-between; align-items: end; gap: 16px; border-bottom: 1px solid var(--line); padding-bottom: 9px; margin-bottom: 14px; }
+    .section-title h2 { font-family: Georgia, 'Times New Roman', serif; font-weight: 400; margin: 0; font-size: clamp(1.5rem, 5vw, 2.2rem); }
+    .section-title span { color: var(--muted); font-size: 0.85rem; white-space: nowrap; }
+    .grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; }
+    .card { background: rgba(255,255,255,0.9); border: 1px solid var(--line); border-radius: 20px; padding: 16px; min-height: 200px; display: flex; flex-direction: column; justify-content: space-between; box-shadow: 0 10px 24px rgba(0,0,0,0.04); transition: transform 0.2s ease, box-shadow 0.2s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 14px 32px rgba(0,0,0,0.08); }
+    .eyebrow { color: var(--blue); text-transform: uppercase; letter-spacing: 0.15em; font-weight: 700; font-size: 0.63rem; margin: 0 0 8px; }
+    .card h3 { font-family: Georgia, 'Times New Roman', serif; font-size: 1.2rem; font-weight: 400; margin: 0 0 7px; line-height: 1.1; }
+    .card p { color: var(--muted); margin: 0; font-size: 0.88rem; line-height: 1.4; }
+    .button-stack { display: grid; gap: 7px; margin-top: 14px; }
+    .btn { display: block; text-align: center; text-decoration: none; border-radius: 999px; padding: 9px 11px; font-weight: 700; font-size: 0.82rem; transition: all 0.2s ease; font-family: inherit; border: none; cursor: pointer; }
+    .btn.primary { background: var(--ink); color: var(--white); }
+    .btn.primary:hover { background: #333; box-shadow: 0 6px 16px rgba(0,0,0,0.12); }
+    .btn.ghost { border: 1px solid var(--line); color: var(--ink); background: var(--white); }
+    .btn.ghost:hover { background: var(--soft); border-color: var(--blue); }
+    .pending-tag { display: inline-block; background: var(--soft); color: var(--muted); border: 1px dashed var(--line); border-radius: 999px; padding: 6px 10px; font-size: 0.72rem; letter-spacing: 0.08em; text-transform: uppercase; margin-top: 14px; text-align: center; }
+    footer { text-align: center; color: var(--muted); margin-top: 40px; padding-top: 18px; border-top: 1px solid var(--line); font-size: 0.85rem; }
+    footer strong { color: var(--ink); }
+    .top-button { position: fixed; right: 14px; bottom: 14px; z-index: 5; background: var(--ink); color: var(--white); border-radius: 999px; padding: 9px 12px; text-decoration: none; font-size: 0.8rem; font-weight: 700; box-shadow: 0 10px 24px rgba(0,0,0,0.16); transition: all 0.2s ease; border: none; }
+    .top-button:hover { background: #333; transform: translateY(-2px); }
+    .card.is-hidden { display: none; }
+    @media (max-width: 980px) { .grid-3 { grid-template-columns: repeat(2, 1fr); } .feature { grid-template-columns: 1fr; } }
+    @media (max-width: 720px) { .page { padding: 16px 10px 32px; } header { padding: 24px 8px 16px; } h1 { font-size: clamp(1.8rem, 6vw, 4rem); } .feature, .directory { border-radius: 18px; padding: 16px; } .section-title { flex-direction: column; align-items: start; gap: 3px; } .grid-3, .directory-grid { grid-template-columns: 1fr; } .card { min-height: 0; } }
+  </style>
+</head>
+<body>
+  <main class="page" id="top">
+    <header>
+      <p class="brand-kicker">Meg Mundy Style LLC Presents</p>
+      <h1>Style That<br />Serves</h1>
+      <div class="hero-line"><span class="diamond"></span></div>
+      <p class="subtitle">Runway to Benefit the Arts</p>
+      <p class="intro">
+        Welcome to the digital shop guide. Tap any card to visit a website or social page — explore featured brands, vendors, photographers, and venue info.
+      </p>
+      <nav class="quick-actions" aria-label="Quick links">
+        <a class="pill" href="#entertainment">Entertainment</a>
+        <a class="pill" href="#brands">Brands</a>
+        <a class="pill" href="#vendors">Vendors</a>
+        <a class="pill" href="#photographers">Photographers</a>
+        <a class="pill" href="#venue">Venue</a>
+      </nav>
+    </header>
+
+    <div class="feature" id="event-details">
+      <div>
+        <h2>Shop the Runway</h2>
+        <p>Saturday, May 29 at the Memorial Art Gallery in Rochester, NY. Browse the runway lineup, vendor pop-ups, photography team, and venue details below.</p>
+      </div>
+      <div class="event-facts">
+        <div class="fact"><strong>Date</strong>Saturday, May 29</div>
+        <div class="fact"><strong>Doors Open</strong>5:30 PM</div>
+        <div class="fact"><strong>Show Starts</strong>7:00 PM</div>
+        <div class="fact"><strong>Venue</strong>Memorial Art Gallery</div>
+        <div class="fact"><strong>Address</strong>500 University Ave, Rochester, NY 14607</div>
+      </div>
+    </div>
+
+    <section class="directory" aria-label="Page directory">
+      <p class="brand-kicker">Quick Directory</p>
+      <h2>Where would you like to go?</h2>
+      <div class="directory-grid">
+        <a class="directory-card" href="#entertainment"><span>01</span><strong>Opening Entertainment</strong><em>SVET & Rochester City Ballet.</em></a>
+        <a class="directory-card" href="#brands"><span>02</span><strong>Featured Brands</strong><em>Shop runway styles.</em></a>
+        <a class="directory-card" href="#vendors"><span>03</span><strong>Vendors</strong><em>Pop-up shopping.</em></a>
+        <a class="directory-card" href="#photographers"><span>04</span><strong>Photographers</strong><em>Event coverage.</em></a>
+        <a class="directory-card" href="#venue"><span>05</span><strong>Memorial Art Gallery</strong><em>Venue info & maps.</em></a>
+      </div>
+    </section>
+
+    <div class="search-wrap">
+      <input id="searchInput" class="search" type="search" placeholder="Search brands, vendors, photographers..." aria-label="Search the page" />
+    </div>
+
+    <section id="entertainment">
+      <div class="section-title">
+        <h2>Opening Entertainment</h2>
+        <span>Live performances</span>
+      </div>
+      <div class="grid-3">
+        <article class="card">
+          <div><p class="eyebrow">Violinist</p><h3>SVET</h3><p>Opening live performance.</p></div>
+          <div class="button-stack">
+            <a class="btn primary" href="https://www.instagram.com/svetmusic/" target="_blank" rel="noopener">Instagram</a>
+          </div>
+        </article>
+        <article class="card">
+          <div><p class="eyebrow">Ballet</p><h3>Rochester City Ballet</h3><p>Accompanying live performance.</p></div>
+          <div class="button-stack">
+            <a class="btn primary" href="https://www.instagram.com/rochestercityballet/" target="_blank" rel="noopener">Instagram</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="brands">
+      <div class="section-title">
+        <h2>Featured Brands</h2>
+        <span>Runway lineup</span>
+      </div>
+      <div class="grid-3">
+        <article class="card">
+          <div><p class="eyebrow">Boutique</p><h3>Betsy Boutique</h3><p>Featured runway brand.</p></div>
+          <div class="button-stack">
+            <a class="btn primary" href="https://www.instagram.com/betsyboutiquenyc/" target="_blank" rel="noopener">Instagram</a>
+          </div>
+        </article>
+        <article class="card">
+          <div><p class="eyebrow">Millinery</p><h3>Moire's Millinery</h3><p>Statement hats and finishing pieces.</p></div>
+          <div class="button-stack">
+            <a class="btn primary" href="https://www.moiresmillinery.com/" target="_blank" rel="noopener">Website</a>
+            <a class="btn ghost" href="https://www.instagram.com/bagalemoire/" target="_blank" rel="noopener">Instagram</a>
+          </div>
+        </article>
+        <article class="card">
+          <div><p class="eyebrow">Upcycled</p><h3>Margot Studios</h3><p>One-of-one upcycled pieces.</p></div>
+          <div class="button-stack">
+            <a class="btn primary" href="https://linktr.ee/margotstudiosco" target="_blank" rel="noopener">Shop / Linktree</a>
+            <a class="btn ghost" href="https://www.instagram.com/margotstudios.co/" target="_blank" rel="noopener">Instagram</a>
+          </div>
+        </article>
+        <article class="card">
+          <div><p class="eyebrow">Kids' Fashion</p><h3>Lola + The Boys</h3><p>Designer kids' fashion.</p></div>
+          <div class="button-stack">
+            <a class="btn primary" href="https://lolaandtheboys.com/" target="_blank" rel="noopener">Website</a>
+            <a class="btn ghost" href="https://www.instagram.com/lolaandtheboys/" target="_blank" rel="noopener">Instagram</a>
+          </div>
+        </article>
+        <article class="card">
+          <div><p class="eyebrow">Designer</p><h3>Andrea Geer</h3><p>Runway-ready designs and signature pieces.</p></div>
+          <div class="button-stack">
+            <a class="btn primary" href="https://linktr.ee/andreageerdesigns" target="_blank" rel="noopener">Linktree</a>
+            <a class="btn ghost" href="https://www.instagram.com/andreageerdesigns/" target="_blank" rel="noopener">Instagram</a>
+          </div>
+        </article>
+        <article class="card">
+          <div><p class="eyebrow">Designer</p><h3>Neon Wave</h3><p>Bold contemporary fashion.</p></div>
+          <div class="button-stack">
+            <a class="btn primary" href="https://thisisneonwave.com/" target="_blank" rel="noopener">Website</a>
+            <a class="btn ghost" href="https://www.instagram.com/thisisneonwave/" target="_blank" rel="noopener">Instagram</a>
+          </div>
+        </article>
+        <article class="card">
+          <div><p class="eyebrow">Millinery</p><h3>Hat Horizons</h3><p>Statement hats and headwear.</p></div>
+          <div class="button-stack">
+            <a class="btn primary" href="https://www.hathorizons.com/" target="_blank" rel="noopener">Website</a>
+            <a class="btn ghost" href="https://www.instagram.com/hathorizons/" target="_blank" rel="noopener">Instagram</a>
+          </div>
+        </article>
+        <article class="card">
+          <div><p class="eyebrow">Dance</p><h3>25 North</h3><p>Performance dance ensemble.</p></div>
+          <div class="button-stack">
+            <a class="btn primary" href="https://www.instagram.com/25northdance/" target="_blank" rel="noopener">Instagram</a>
+          </div>
+        </article>
+        <article class="card">
+          <div><p class="eyebrow">Youth Camp</p><h3>Fashion Camp 585</h3><p>Youth fashion design camp by Meg Mundy Style.</p></div>
+          <div class="button-stack">
+            <a class="btn primary" href="https://forms.gle/yWZ4rL3n98cBMUoC6" target="_blank" rel="noopener">Register (July Session)</a>
+            <a class="btn ghost" href="https://www.megmundystyle.com/" target="_blank" rel="noopener">Website</a>
+            <a class="btn ghost" href="https://www.instagram.com/megmundystyle_llc/" target="_blank" rel="noopener">Instagram</a>
+          </div>
+        </article>
+        <article class="card">
+          <div><p class="eyebrow">Lingerie</p><h3>la Vie en Rose</h3><p>Lingerie and loungewear.</p></div>
+          <div class="button-stack">
+            <a class="btn primary" href="https://www.lavieenrose.com/us" target="_blank" rel="noopener">Website</a>
+            <a class="btn ghost" href="https://www.instagram.com/lavieenrose/" target="_blank" rel="noopener">Instagram</a>
+          </div>
+        </article>
+        <article class="card">
+          <div><p class="eyebrow">Boutique</p><h3>Chandeliers Boutique</h3><p>Boutique fashion and accessories.</p></div>
+          <div class="button-stack">
+            <a class="btn primary" href="https://chandeliers-btq.com/" target="_blank" rel="noopener">Website</a>
+            <a class="btn ghost" href="https://www.instagram.com/chandeliersboutique/" target="_blank" rel="noopener">Instagram</a>
+          </div>
+        </article>
+        <article class="card">
+          <div><p class="eyebrow">Boutique</p><h3>Chantiza Boutique</h3><p>Featured boutique.</p></div>
+          <div class="button-stack">
+            <a class="btn primary" href="https://www.instagram.com/chantiza_boutique/" target="_blank" rel="noopener">Instagram</a>
+          </div>
+        </article>
+        <article class="card">
+          <div><p class="eyebrow">Jewelry</p><h3>Reckless Necklace</h3><p>Handcrafted statement jewelry.</p></div>
+          <div class="button-stack">
+            <a class="btn primary" href="https://www.instagram.com/recklessnecklace/" target="_blank" rel="noopener">Instagram</a>
+          </div>
+        </article>
+        <article class="card">
+          <div><p class="eyebrow">Designer</p><h3>Figure It Out</h3><p>Featured runway brand.</p></div>
+          <div class="button-stack">
+            <a class="btn primary" href="https://www.instagram.com/f1gure.itout/" target="_blank" rel="noopener">Instagram</a>
+          </div>
+        </article>
+        <article class="card">
+          <div><p class="eyebrow">Consignment</p><h3>Panache Consignment</h3><p>by Natalie Rae · pre-loved fashion.</p></div>
+          <div class="button-stack">
+            <a class="btn primary" href="https://www.panacheconsignboutique.com/" target="_blank" rel="noopener">Website</a>
+            <a class="btn ghost" href="https://www.instagram.com/panachebynatalierae/" target="_blank" rel="noopener">Instagram</a>
+          </div>
+        </article>
+        <article class="card">
+          <div><p class="eyebrow">Designer</p><h3>Tania Casini</h3><p>Featured designer.</p></div>
+          <div class="button-stack">
+            <a class="btn primary" href="https://taniacasini.com/" target="_blank" rel="noopener">Website</a>
+            <a class="btn ghost" href="https://www.instagram.com/tania_casini/" target="_blank" rel="noopener">Instagram</a>
+          </div>
+        </article>
+        <article class="card">
+          <div><p class="eyebrow">Couture</p><h3>Adebayo Jones</h3><p>Couture designer.</p></div>
+          <div class="button-stack">
+            <a class="btn primary" href="https://www.instagram.com/adebayojonesfrsa/" target="_blank" rel="noopener">Instagram</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="vendors">
+      <div class="section-title">
+        <h2>Vendors</h2>
+        <span>Pop-up shopping</span>
+      </div>
+      <div class="grid-3">
+        <article class="card">
+          <div><p class="eyebrow">Boutique</p><h3>Chandeliers</h3><p>Boutique fashion and accessories.</p></div>
+          <div class="button-stack">
+            <a class="btn primary" href="https://chandeliers-btq.com/" target="_blank" rel="noopener">Website</a>
+            <a class="btn ghost" href="https://www.instagram.com/chandeliersboutique/" target="_blank" rel="noopener">Instagram</a>
+          </div>
+        </article>
+        <article class="card">
+          <div><p class="eyebrow">Coffee</p><h3>Moku Coffee Supply</h3><p>Coffee and beverage vendor.</p></div>
+          <div class="button-stack">
+            <a class="btn primary" href="https://www.instagram.com/mokucoffeesupply/" target="_blank" rel="noopener">Instagram</a>
+          </div>
+        </article>
+        <article class="card">
+          <div><p class="eyebrow">Upcycled</p><h3>Margot Studios</h3><p>One-of-one upcycled pieces.</p></div>
+          <div class="button-stack">
+            <a class="btn primary" href="https://linktr.ee/margotstudiosco" target="_blank" rel="noopener">Shop / Linktree</a>
+            <a class="btn ghost" href="https://www.instagram.com/margotstudios.co/" target="_blank" rel="noopener">Instagram</a>
+          </div>
+        </article>
+        <article class="card">
+          <div><p class="eyebrow">Wellness</p><h3>Burn Boot Camp</h3><p>Fitness and wellness — Pittsford.</p></div>
+          <div class="button-stack">
+            <a class="btn primary" href="https://www.instagram.com/burnbootcamppittsford/" target="_blank" rel="noopener">Instagram</a>
+          </div>
+        </article>
+        <article class="card">
+          <div><p class="eyebrow">Designer</p><h3>Adebayo Jones</h3><p>Couture designer.</p></div>
+          <div class="button-stack">
+            <a class="btn primary" href="https://www.instagram.com/adebayojonesfrsa/" target="_blank" rel="noopener">Instagram</a>
+          </div>
+        </article>
+        <article class="card">
+          <div><p class="eyebrow">Vendor</p><h3>Tippi Watson</h3><p>Featured pop-up vendor.</p></div>
+          <span class="pending-tag">Details coming soon</span>
+        </article>
+        <article class="card">
+          <div><p class="eyebrow">Boho</p><h3>Shay — Boho Chic</h3><p>Boho-inspired fashion.</p></div>
+          <span class="pending-tag">Details coming soon</span>
+        </article>
+        <article class="card">
+          <div><p class="eyebrow">Boutique</p><h3>Betsy Boutique</h3><p>Boutique fashion.</p></div>
+          <div class="button-stack">
+            <a class="btn primary" href="https://www.instagram.com/betsyboutiquenyc/" target="_blank" rel="noopener">Instagram</a>
+          </div>
+        </article>
+        <article class="card">
+          <div><p class="eyebrow">Beadwork</p><h3>Your Favorite Beader</h3><p>Handcrafted beaded jewelry by Caren.</p></div>
+          <div class="button-stack">
+            <a class="btn primary" href="https://www.facebook.com/madeby.caren" target="_blank" rel="noopener">Facebook</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="photographers">
+      <div class="section-title">
+        <h2>Photography Team</h2>
+        <span>Click to connect</span>
+      </div>
+      <div class="grid-3">
+        <article class="card">
+          <div><p class="eyebrow">Photographer</p><h3>Brandon Vick</h3><p>Professional event photography.</p></div>
+          <div class="button-stack">
+            <a class="btn primary" href="https://www.brandonvickphotography.com/" target="_blank" rel="noopener">Website</a>
+            <a class="btn ghost" href="https://www.instagram.com/brandonvickphoto/" target="_blank" rel="noopener">Instagram</a>
+          </div>
+        </article>
+        <article class="card">
+          <div><p class="eyebrow">Photographer</p><h3>Alyssa Dewitt</h3><p>Professional event photography.</p></div>
+          <div class="button-stack">
+            <a class="btn primary" href="https://www.alyssamdewitt.com/" target="_blank" rel="noopener">Website</a>
+            <a class="btn ghost" href="https://www.instagram.com/alyssamdewittphoto/" target="_blank" rel="noopener">Instagram</a>
+          </div>
+        </article>
+        <article class="card">
+          <div><p class="eyebrow">Photographer</p><h3>Chris Cove</h3><p>Nature and event photography.</p></div>
+          <div class="button-stack">
+            <a class="btn primary" href="https://www.covenaturephotography.com/" target="_blank" rel="noopener">Website</a>
+          </div>
+        </article>
+        <article class="card">
+          <div><p class="eyebrow">Photographer</p><h3>Sage Cruz Field</h3><p>Event photography.</p></div>
+          <div class="button-stack">
+            <a class="btn primary" href="https://www.instagram.com/sagecruzfield/" target="_blank" rel="noopener">Instagram</a>
+          </div>
+        </article>
+        <article class="card">
+          <div><p class="eyebrow">Photographer</p><h3>Jack Connolly</h3><p>Event photography.</p></div>
+          <div class="button-stack">
+            <a class="btn primary" href="http://jackrconnolly.com/" target="_blank" rel="noopener">Website</a>
+          </div>
+        </article>
+        <article class="card">
+          <div><p class="eyebrow">Photographer</p><h3>Marta Ross</h3><p>Event photography.</p></div>
+          <div class="button-stack">
+            <a class="btn primary" href="https://www.instagram.com/martammross/" target="_blank" rel="noopener">Instagram</a>
+          </div>
+        </article>
+        <article class="card">
+          <div><p class="eyebrow">Photographer</p><h3>Macrina Jeary</h3><p>Event photography.</p></div>
+          <div class="button-stack">
+            <a class="btn primary" href="https://www.instagram.com/macrinajeary15/" target="_blank" rel="noopener">Instagram</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="venue">
+      <div class="section-title">
+        <h2>Memorial Art Gallery</h2>
+        <span>Venue partner</span>
+      </div>
+      <div class="grid-3">
+        <article class="card">
+          <div><p class="eyebrow">Venue</p><h3>Memorial Art Gallery</h3><p>Thank you for hosting Style That Serves.</p></div>
+          <div class="button-stack">
+            <a class="btn primary" href="https://mag.rochester.edu/" target="_blank" rel="noopener">Visit Website</a>
+            <a class="btn ghost" href="https://mag.rochester.edu/visit/" target="_blank" rel="noopener">Plan a Visit</a>
+          </div>
+        </article>
+        <article class="card">
+          <div><p class="eyebrow">Location</p><h3>500 University Ave</h3><p>Rochester, NY 14607</p></div>
+          <div class="button-stack">
+            <a class="btn ghost" href="https://www.google.com/maps/search/?api=1&query=Memorial+Art+Gallery+500+University+Ave+Rochester+NY+14607" target="_blank" rel="noopener">Open in Maps</a>
+            <a class="btn ghost" href="tel:+15852768900">Call (585) 276-8900</a>
+          </div>
+        </article>
+        <article class="card">
+          <div><p class="eyebrow">Connect</p><h3>Follow MAG</h3><p>Exhibitions, events, and updates.</p></div>
+          <div class="button-stack">
+            <a class="btn ghost" href="https://www.instagram.com/memorialartgallery/" target="_blank" rel="noopener">Instagram</a>
+            <a class="btn ghost" href="https://www.facebook.com/MemorialArtGallery" target="_blank" rel="noopener">Facebook</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <footer>
+      <p><strong>Style That Serves</strong> · Hosted by Meg Mundy Style LLC</p>
+      <p>Saturday, May 29 · Memorial Art Gallery · Rochester, NY</p>
+    </footer>
+  </main>
+
+  <a class="top-button" href="#top">Top &uarr;</a>
+
+  <script>
+    // Lightweight client-side filter for the search box.
+    (function () {
+      var input = document.getElementById('searchInput');
+      if (!input) return;
+      var cards = Array.prototype.slice.call(document.querySelectorAll('section .card'));
+      input.addEventListener('input', function () {
+        var q = (input.value || '').trim().toLowerCase();
+        cards.forEach(function (card) {
+          if (!q) { card.classList.remove('is-hidden'); return; }
+          var text = card.textContent.toLowerCase();
+          card.classList.toggle('is-hidden', text.indexOf(q) === -1);
+        });
+      });
+    })();
+  </script>
+</body>
+</html>
